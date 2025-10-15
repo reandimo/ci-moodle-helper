@@ -1,0 +1,38 @@
+{
+    "name": "ci-moodle-helper/moodle-api",
+    "description": "A PHP library for interacting with Moodle REST API",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Renan Diaz",
+            "email": "reandimo23@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "llagerlof/moodlerest": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "CiMoodleHelper\\MoodleApi\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CiMoodleHelper\\MoodleApi\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
